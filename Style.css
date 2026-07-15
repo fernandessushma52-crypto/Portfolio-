@@ -197,14 +197,117 @@ nav {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-#skills ul {
-    list-style-position: inside;
-    padding: 0;
-    text-align: center;
+.project {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
-#skills li {
-    list-style: disc;
-    margin: 10px 0;
-    font-size: 20px;
+.project:hover {
+  transform: scale(1.03);
+}
+.skill {
+  margin: 20px auto;
+  width: 80%;
+  text-align: left;
+}
+
+.bar {
+  width: 100%;
+  height: 12px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #4CAF50;
+}
+
+.html { width: 90%; }
+.css { width: 85%; }
+.js { width: 70%; }
+.python { width: 75%; }
+.java { width: 70%; }
+.c { width: 75%; }
+.dbms { width: 80%; }
+.hero h1 {
+  font-size: 48px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 22px;
+  color: #555;
+}
+
+.hero {
+  padding: 60px 20px;
+  border-radius: 15px;
+}
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.top-btn:hover {
+  background: #0056b3;
+}
+.typing::after {
+  content: "BCA Student | Web Developer";
+  animation: typing 4s steps(30) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+section {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bfff;
 }
